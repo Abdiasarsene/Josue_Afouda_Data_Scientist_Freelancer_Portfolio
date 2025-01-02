@@ -23,4 +23,4 @@ Pour visualiser ce projet localement, suivez les étapes ci-dessous :
 
 1. Clonez ce dépôt sur votre machine locale :
    ```bash
-   git clone https://github.com/votre-utilisateur/votre-portfolio.git
+   git clone https://github.com/Abdiasarsene/joshua_website.git
