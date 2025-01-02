@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pied de Page</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        footer {
+            color: #fff;
+            background-color: #383737; /* Couleur de fond sombre */
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1,5;
+        }
+
+        .footer-column {
+            flex: 1 1 200px; /* Largeur minimum */
+            margin: 20px;
+        }
+
+        .footer-column h3 {
+            font-size: 18px;
+            color: #f7501d; /* Couleur orange */
+            margin-bottom: 10px;
+            position: relative;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+        }
+
+        .footer-column h3::before {
+            content: "";
+            width: 5px;
+            height: 100%;
+            background-color: #f7501d;
+            position: absolute;
+            left: -15px;
+            top: 0;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .footer-column ul li a:hover {
+            text-decoration: underline;
+        }
+        .footer-column p {
+            line-height: 1.5;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #f7501d;
+        }
+        
+        .container {
+            background-color: #20c056;
+            text-align: center;
+            padding: 10px 0; /* Espacement vertical pour un meilleur rendu */
+        }
+
+    .mb {
+        font-weight: bolder;
+        color: black; /* Texte en blanc pour contraster avec le fond vert */
+        margin: 0; /* Supprime les marges inutiles */
+    }
+
+
+    @media (max-width: 976px) { 
+        footer {
+            background-color: #383737; /* Couleur de fond sombre */
+            color: #fff;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1,5;
+        }
+
+        .footer-column {
+            flex: 1 1 100px; /* Largeur minimum */
+            margin: 10px;
+        }
+
+        .footer-column h3 {
+            font-size: 18px;
+            color: #f7501d; /* Couleur orange */
+            margin-bottom: 10px;
+            position: relative;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+        }
+
+        .footer-column h3::before {
+            content: "";
+            width: 5px;
+            height: 100%;
+            background-color: #f7501d;
+            position: absolute;
+            left: -15px;
+            top: 0;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .footer-column ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-column p {
+            line-height: 1.5;
+            padding-right: 30px;
+            font-size: 12px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #f7501d;
+        }
+
+        .container {
+            background-color: #20c056;
+            text-align: center;
+            padding: 10px 0; /* Espacement vertical pour un meilleur rendu */
+        }
+
+        .mb {
+            font-weight: bolder;
+            color: black; /* Texte en blanc pour contraster avec le fond vert */
+            margin: 0; /* Supprime les marges inutiles */
+        }
+    }
+
+    @media (max-width: 768px) {
+        footer {
+            background-color: #383737; /* Couleur de fond sombre */
+            color: #fff;
+            padding: 10px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1,5;
+        }
+
+        .footer-column {
+            flex: 1 1 100px; /* Largeur minimum */
+            margin: 10px;
+            margin-bottom: auto;
+        }
+
+        .footer-column h3 {
+            font-size: 18px;
+            color: #f7501d; /* Couleur orange */
+            margin-bottom: 10px;
+            position: relative;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+        }
+
+        .footer-column h3::before {
+            content: "";
+            width: 5px;
+            height: 100%;
+            background-color: #f7501d;
+            position: absolute;
+            left: -15px;
+            top: 0;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .footer-column ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-column p {
+            line-height: 1.5;
+            padding-right: 30px;
+            font-size: 12px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #f7501d;
+        }
+
+        .container {
+            background-color: #20c056;
+            text-align: center;
+            padding: 10px 0; /* Espacement vertical pour un meilleur rendu */
+        }
+
+        .mb {
+            font-weight: bolder;
+            color: black; /* Texte en blanc pour contraster avec le fond vert */
+            margin: 0; /* Supprime les marges inutiles */
+        }
+    }
+
+    </style>
+</head>
+<body>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Who Am I ?</h3>
+                <p>Passionate about development and data analysis, I turn ideas into tangible solutions – get in touch to collaborate on your projects!.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Pages</h3>
+                <ul>
+                    <li><a href="#">Schedule Now</a></li>
+                    <li><a href="/Child/services.html">My Servcies</a></li>
+                    <li><a href="/Child/portfolio.html">My Portfolios</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Infos</h3>
+                <ul>
+                    <li><a href="/Child/book.html">All My Books</a></li>
+                    <li><a href="/Child/book.html">Data Insights</a></li>
+                    <li><a href="/Child/hire-me.html">Hire Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Socials Media</h3>
+                <div class="social-icons">
+                    <a href="https://twitter.com/yourusername">
+                        <img src="/Images/x.png" alt="Twitter" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://www.linkedin.com/in/josu%C3%A9-afouda/">
+                        <img src="/Images/linkedin.png" alt="LinkedIn" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://www.youtube.com/c/JADATATECHCONSULTING">
+                        <img src="/Images/youtube.png" alt="YouTube" style="width: 50px; height: 50px;">
+                    </a>
+                </div>
+            </div>
+            
+            </div>
+        </div>   
+    </footer>
+    <footer class="bg-green text-white text-center py-3 mt-auto" style="background-color: #20c056;">
+        <p class="mb-0" style="color: black;font-weight: bolder;">&copy; 2024 JoshuaTech. All rights reserved.</p>
+    </footer>
+    
+
+    <!-- Inclure Font Awesome pour les icônes -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

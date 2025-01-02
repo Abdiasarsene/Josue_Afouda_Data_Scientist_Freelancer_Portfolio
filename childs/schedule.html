@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make An appointment</title>
+    <link rel="stylesheet" href="/css/schedule.css">
+</head>
+<body>
+    <!-- Charger le fichier header -->
+    <div id="header"></div>
+
+    <!-- Contenu principal -->
+    <section class="appointment">
+        <section class="schedule">
+            <h1>Make an appointment</h1>
+            <p>Easily schedule your appointment using the calendar below:</p>
+            <a href="https://wa.me/33745011853"><button>Let's Talk</button></a>
+        </section>
+        <div class="appointment-container">
+            <div class="calendly-widget">
+                <iframe 
+                    src="https://calendly.com/ktdetailing/debrief-me-on-your-project" 
+                    width="100%" 
+                    height="650px" 
+                    frameborder="0" 
+                    scrolling="no">
+                </iframe>
+            </div>
+        </div>    
+    </section>
+
+    <!-- Charger le fichier du pied de page -->
+    <div id="footer"></div>
+
+    <script>
+        // Charger et insérer le contenu HTML
+        ['header', 'footer'].forEach(id => {
+            fetch(id + '.html')
+                .then(response => response.text())
+                .then(data => document.getElementById(id).innerHTML = data)
+                .catch(error => console.error('Erreur lors du chargement du fichier:', error));
+        });
+    </script>
+</body>
+</html>

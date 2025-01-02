@@ -1,0 +1,83 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Section Hire Me */
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #956841 0%, #838282 100%);
+    padding-top: 120px;
+}
+
+.contact-section h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    
+}
+
+.contact-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+/* Formulaire */
+form {
+    background: #f9f9f9;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background: linear-gradient(to right, #feb301 0%, #f7501d 100%);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+form button:hover {
+    background: linear-gradient(to right, #20c056 0%, #f7501d 100%);
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me - Josué (Joshua) AFOUDA</title>
+    <link rel="stylesheet" href="/css/hire-me.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-sec">
+        <div id="header"></div>
+    </header>
+
+    <!-- Section Hire Me -->
+    <section id="hire-me" class="contact-section">
+        <div class="container" style="background: linear-gradient(to right, #956841 0%, #838282 100%);">
+            <h1>Hire Me</h1>
+            <p>Have a project in mind? Tell me about it below, and let's get started!</p>
+            <form action="https://formsubmit.co/afouda.josue@gmail.com" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                
+                <label for="project-type">Project Type:</label>
+                <select id="project-type" name="project-type" required>
+                    <option value="">Select a project type</option>
+                    <option value="dashboard">Dashboard Development</option>
+                    <option value="automation">Workflow Automation</option>
+                    <option value="analytics">Data Analytics</option>
+                    <option value="prediction">Predictive Modeling</option>
+                    <option value="data-cleaning">Data Cleaning</option>
+                    <option value="machine-learning">Machine Learning Models</option>
+                    <option value="custom-app">Custom Data Applications</option>
+                </select>
+                
+                <label for="timeline">Desired Timeline:</label>
+                <input type="text" id="timeline" name="timeline" placeholder="e.g., 2 weeks" required>
+                
+                <label for="budget">Budget (optional):</label>
+                <input type="text" id="budget" name="budget" placeholder="Your Budget">
+                
+                <label for="message">Project Description:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Describe your project..." required></textarea>
+                
+                <!-- Hidden inputs for FormSubmit -->
+                <input type="hidden" name="_next" value="https://joshafouda.github.io/joshua-afouda/Childs/thank-you.html">
+                <input type="hidden" name="_subject" value="New Hire Me Submission">
+                <input type="hidden" name="_captcha" value="false">
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div id="footer"></div>
+
+        <script>
+            // Charger et insérer le contenu HTML
+            ['header', 'footer'].forEach(id => {
+                fetch(id + '.html')
+                    .then(response => response.text())
+                    .then(data => document.getElementById(id).innerHTML = data)
+                    .catch(error => console.error('Erreur lors du chargement du fichier:', error));
+            });
+        </script>
+    </footer>
+</body>
+</html>

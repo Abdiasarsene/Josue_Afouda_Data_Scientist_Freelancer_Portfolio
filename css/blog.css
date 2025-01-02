@@ -1,0 +1,102 @@
+/* Styles de base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #20c056 0%, #f7501d 100%);
+    color: #333;
+}
+
+.spacer {
+    height: 40px; /* Ajustez cette valeur pour l'espace désiré */
+}
+
+/* Section du blog */
+.blog {
+    text-align: center;
+    padding: 50px 20px;
+    padding-top: 150px;
+}
+
+.blog h1 {
+    font-size: 3em;
+    color: #373737;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.blog p {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+
+/* Conteneur des articles */
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Carte de chaque article */
+.blog-post {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.blog-post h2 {
+    font-size: 1em;
+    color: #f7501d;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.blog-post p {
+    font-size: 1em;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+/* Bouton pour lire plus */
+.blog-post button {
+    background: #f7501d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.blog-post button:hover {
+    background: #003d80;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .blog-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Books</title>
+    <link rel="stylesheet" href="/css/book.css">
+</head>
+<body>
+    <!-- Charger le fichier header -->
+    <div id="header"></div>
+
+    <!-- Section principale des livres -->
+    <section class="books">
+        <h1>My Books</h1>
+        <p>Discover my literary works and let yourself be inspired!</p>
+        <div class="book-container">
+            <!-- Livre 1 -->
+            <div class="book">
+                <img src="/Images/livres.png" alt="Livre 1">
+                <h2>Ebook Statistics and Simulation with Python: Course and Corrected Exercises</h2>
+                <p>An intriguing glimpse of what your book has to offer.</p>
+                <button onclick="location.href='https://your-payment-link.com';">Buy now</button>
+            </div>
+            <!-- Livre 2 -->
+            <div class="book">
+                <img src="/Images/cover_3d_livre_stats_python.png" alt="Livre 2">
+                <h2>Ebook LEARN TO PROGRAM WITH R AND RSTUDIO</h2>
+                <p>An intriguing glimpse of what your book has to offer.</p>
+                <button onclick="location.href='https://your-payment-link.com';">Buy now</button>
+            </div>
+            <!-- Ajouter d'autres livres ici -->
+            <div class="book">
+                <img src="/Images/couverture_livre_shiny.jpg" alt="Livre 2" style="height: 150px; width: auto;">
+                <h2>Data Analysis with Python and Pandas for Beginners</h2>
+                <p>An intriguing glimpse of what your book has to offer.</p>
+                <button onclick="location.href='https://your-payment-link.com';">Buy now</button>
+            </div>
+            <div class="book">
+                <img src="/Images/boo.jpg" alt="Livre 2">
+                <h2>Ethics in Data Science and Artificial Intelligence (ebook)</h2>
+                <p>An intriguing glimpse of what your book has to offer.</p>
+                <button onclick="location.href='https://your-payment-link.com';">Buy now</button>
+            </div>
+            <div class="book">
+                <img src="/Images/ooks.jpg" alt="Livre 2">
+                <h2>An intriguing glimpse of what your book has to offer.</h2>
+                <p>An intriguing glimpse of what your book has to offer.</p>
+                <button onclick="location.href='https://your-payment-link.com';">Buy now</button>
+            </div>  
+            <div class="book">
+                <img src="/Images/livres.png" alt="Livre 2">
+                <h2>An intriguing glimpse of what your book has to offer.</h2>
+                <p>An intriguing glimpse of what your book has to offer.</p>
+                <button onclick="location.href='https://your-payment-link.com';">Buy now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Charger le fichier du pied de page -->
+    <div id="footer"></div>
+
+    <script>
+        // Charger et insérer le contenu HTML
+        ['header', 'footer'].forEach(id => {
+            fetch(id + '.html')
+                .then(response => response.text())
+                .then(data => document.getElementById(id).innerHTML = data)
+                .catch(error => console.error('Erreur lors du chargement du fichier:', error));
+        });
+    </script>
+</body>
+</html>

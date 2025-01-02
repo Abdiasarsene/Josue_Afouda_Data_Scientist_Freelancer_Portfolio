@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <!-- Contenu de la page -->
+    <main>
+        <section class="two-columns">
+            <!-- Première colonne -->
+            <div class="text-column">
+                <h1>I am Josué (Joshua)</h1>
+                <H2>Freelance Full Remote</H2>
+                <p>
+                    Boost your business with a Freelance R/RShiny & Python Expert specializing in automating workflows and building scalable analytics solutions. With 7+ years of experience, I create interactive dashboards, optimize data applications, and deliver real-time insights. I can provide a tailored proof of concept (POC) for your project within 24 hours. Ready to transform your data processes and achieve impactful results? Then hire me!
+                </p>
+                <div class="buttons">
+                    <a href="/childs/hire-me.html"><button style="background-color: #f7501d;">Hire Me</button></a>
+                    <a href="https://wa.me/33745011853?text=Good%20morning%20to%20you%20Mr.%20Josué.%20Is%20it%20possible%20to%20talk%20about%20a%20project%20for%20which%20I%20think%20you%20are%20the%20right%20profile?%0A%0AIf%20you%20are%20interested,%20let%20me%20know%20immediately" 
+                    target="_blank" rel="noopener noreferrer"><button>Let's Talk</button></a>
+                    <a href="/childs/portfolio.html"><button style="background-color: #feb301;">My Portfolio</button></a>
+                </div>
+                <div class="is">
+                    <a href="https://wa.me/33745011853"><button>Let's Talk</button></a>
+                </div>
+            </div>
+    
+            <!-- Deuxième colonne -->
+            <div class="column image-column">
+                <img src="/Images/manager.jpg" alt="Description de l'image">
+            </div>
+        </section>
+        <!-- Section 1: 4 colonnes avec image, sous-titre et descriptif -->
+        <h1 class="tools">My Tools of Expertise</h1>
+    <section class="four-columns">
+        <div class="column">
+            <img src="/Images/python.png" alt="Image 1">
+            <h3>Versatile Programming</h3>
+            <p>Python is a versatile programming language known for its simplicity and readability. Widely used in data science, web development, and automation, it empowers developers to build efficient and scalable solutions across various domains. </p>
+        </div>
+        <div class="column">
+            <img src="/Images/strem.png" alt="Image 2", class="strea">
+            <h3>Effortless App Creation</h3>
+            <p>Streamlit allows you to effortlessly create beautiful, custom web apps with Python. Perfect for showcasing machine learning models, it transforms data scripts into interactive web tools with minimal effort.</p>
+        </div>
+        <div class="column">
+            <img src="/Images/rshiny.png" alt="Image 3">
+            <h3>Interactive Web Solutions</h3>
+            <p>RShiny simplifies creating interactive web applications with R. Ideal for visualizing data dynamically, it empowers users to build sophisticated, user-friendly dashboards for analysis and presentation.</p>
+        </div>
+        <div class="column">
+            <img src="/Images/pytorch.png" alt="Image 4", class="torch">
+            <h3>Deep Learning Powerhouse</h3>
+            <p>PyTorch is a powerful deep learning framework known for its flexibility and ease of use. It accelerates research and development, allowing users to build and deploy neural network models efficiently across diverse applications.</p>
+        </div>
+    </section>
+
+    <!-- Section 2: Call-to-action -->
+    <section class="call-to-action">
+        <h2>Unlock Data Potential Together</h2>
+        <p>Join forces with an expert in Data Science to transform your raw data into meaningful insights. Leverage advanced analytics, machine learning models, and innovative approaches to tackle complex problems. Collaborate to discover hidden patterns, enhance decision-making, and drive impactful results. Let's turn your data into a powerful asset and shape the future with data-driven solutions. Your next breakthrough is just a partnership away!</p>
+        <a href="/childs/hire-me.html" target="_blank">
+            <button>Hire Me</button>
+        </a>
+            </section>
+
+    <!-- Section 3: FAQ -->
+    <section class="faq">
+        <h2>FAQ - Frequently Ask Questions</h2>
+        <div class="faq-item">
+            <h3>Question 1: How can I contact you?</h3>
+            <p>You can contact me via email at joshuaafouda@gmail.com, WhatsApp at +33 6 12 34 56 78 (French number), or direct message on LinkedIn. I look forward to connecting!.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Question 2 : What services do you offer?</h3>
+            <p>I offer data analysis, machine learning model development, dashboard creation, data visualization, predictive analytics, and data-driven insights to help you make informed decisions and achieve impactful results.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Question 3 : Where are you located?</h3>
+            <p>I am located in Limoges at 123 Rue de la Science, 87000 Limoges, France. Looking forward to connecting with you!
+                .</p>
+        </div>
+    </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        // Charger et insérer le contenu HTML
+        ['header', 'footer'].forEach(id => {
+            fetch(id + '.html')
+                .then(response => response.text())
+                .then(data => document.getElementById(id).innerHTML = data)
+                .catch(error => console.error('Erreur lors du chargement du fichier:', error));
+        });
+    </script>
+</body>
+</html>

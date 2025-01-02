@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #383737 !important;
+            padding-left: 40px;
+            padding-right: 60px;
+        }
+        .nav-link {
+            color: #20c056 !important;
+        }
+        .nav-link:hover {
+            color: #f7501d !important;
+            text-decoration: underline 5px;
+        }
+        .container-fluid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        #navbarNav {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        @media (max-width: 596px) {
+            .navbar {
+            background-color: #e8ebf0 !important;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+            .navbar-brand img {
+                height: 50px;
+            }
+            .nav-link {
+                font-size: 16px;
+            }
+            .collapse {
+                transition: height 0.3s ease-in-out;
+            }
+            .navbar-toggler {
+                border-color: #20c056 !important;
+            }
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%2828, 192, 86, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            }
+            .collapse.show {
+                display: flex;
+                flex-direction: column;
+                background-color: #e8ebf0;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                z-index: 10;
+                padding: 20px 0;
+            }
+            .nav-link {
+                text-align: center;
+                padding: 10px 0;
+                color: #20c056 !important;
+            }
+            .nav-link:hover {
+                color: #f7501d !important;
+                text-decoration: underline 5px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .navbar {
+            background-color: #e8ebf0 !important;
+            padding-left: 25px;
+            padding-right: 30px;
+        }
+            .navbar-brand img {
+                height: 50px;
+            }
+            .nav-link {
+                font-size: 16px;
+            }
+            .collapse {
+                transition: height 0.3s ease-in-out;
+            }
+            .navbar-toggler {
+                border-color: #20c056 !important;
+            }
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%2828, 192, 86, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            }
+            .collapse.show {
+                display: flex;
+                flex-direction: column;
+                background-color: #e8ebf0;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                z-index: 10;
+                padding: 20px 0;
+            }
+            .nav-link {
+                text-align: center;
+                padding: 10px 0;
+                color: #20c056 !important;
+            }
+            .nav-link:hover {
+                color: #f7501d !important;
+                text-decoration: underline 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Entête fixe avec fond de couleur -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/Images/logo_afouda.png" alt="Logo" style="height: 80px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/childs/services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/childs/portfolio.html">My Portfolios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/childs/schedule.html">Schedule Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/childs/blog.html">Data Insights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/childs/book.html">Book</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Inclure Font Awesome pour les icônes -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script personnalisé -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggler = document.querySelector(".navbar-toggler");
+            const menu = document.querySelector("#navbarNav");
+
+            toggler.addEventListener("click", function () {
+                menu.classList.toggle("show");
+            });
+        });
+    </script>
+</body>
+</html>

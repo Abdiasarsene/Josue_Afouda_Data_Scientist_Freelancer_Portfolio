@@ -1,0 +1,123 @@
+/* Styles de base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Section de rendez-vous */
+.appointment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+    background: linear-gradient(to right, #d9d9d9 0%, #e6dfbd 100%);
+}
+
+/* Texte et description */
+.schedule {
+    flex: 1;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: linear-gradient(to right, #f7501d 0%, #feb301 100%);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.schedule h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: #373737;
+}
+
+.schedule p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.schedule button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #373737;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.schedule button:hover {
+    background-color: #0056b3;
+}
+/* Conteneur pour le widget Calendly */
+.appointment-container {
+    flex: 1;
+    max-width: 600px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.calendly-widget iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Responsivité */
+@media (max-width: 1024px) {
+    .appointment {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .schedule {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .calendly-widget iframe {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .schedule h1 {
+        font-size: 1.8em;
+    }
+
+    .schedule p {
+        font-size: 1em;
+    }
+
+    .calendly-widget iframe {
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .schedule h1 {
+        font-size: 1.5em;
+    }
+
+    .calendly-widget iframe {
+        height: 300px;
+    }
+}

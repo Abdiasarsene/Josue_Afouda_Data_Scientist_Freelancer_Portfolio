@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="/css/services.css">
+</head>
+<body>
+    <!-- Fichier de l'entête -->
+    <div id="header"></div>
+
+    <!-- Cotenu principal -->
+    <main>
+        <section class="service">
+            <h1>My Services</h1>
+            <p>Each service we offer is meticulously crafted to address your unique needs and objectives. We focus on providing personalized solutions that deliver impactful results, ensuring your goals are met with precision and care. Our approach combines innovation, expertise, and a deep understanding of your requirements to create meaningful outcomes. Trust us to transform your vision into reality with services tailored specifically for you, driving success and exceeding expectations at every step.</p>
+            <a href="/childs/hire-me.html"><button>Hire Me</button></a>
+        </section>
+
+        <div class="container" style="background-color: #fff;padding-top: 40px;">
+            <div class="image-section">
+                <div class="webpage-mockup" style="background-color: #373737;">
+                    <img src="/Images/consulting.jpg" alt="Person holding a mobile device" class="main-image">
+                    <div class="text-section">
+                        <p class="josh" style="color: white;">Josué AFOUDA - Data Developer Expert </p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-section">
+                <h1>Consulting</h1>
+                <p>Your website is often the first point of contact for potential customers, the focus is on creating an online presence that is both visually compelling and highly functional.</p>
+                <p>The design process begins with a thorough consultation to understand business goals, target audience and brand identity. This foundational step ensures the website aligns perfectly with the intended vision.</p>
+                <h2 style="color: #373737;">Types of websites</h2>
+                <ul>
+                    <li>Landing pages</li>
+                    <li>Enquiry / service based</li>
+                    <li>Subscription</li>
+                    <li>E-commerce</li>
+                </ul>
+                <a href="/childs/schedule.html"><button class="call-button" style="background-color: #373737;">Book a call</button></a>
+            </div>
+        </div>
+
+        <div class="container" style="background-color: #fff;">
+            <div class="text-section">
+                <h1>Data visualization</h1>
+                <p>Your website is often the first point of contact for potential customers, the focus is on creating an online presence that is both visually compelling and highly functional.</p>
+                <p>The design process begins with a thorough consultation to understand business goals, target audience and brand identity. This foundational step ensures the website aligns perfectly with the intended vision.</p>
+                <h2 style="color: #feb301;">Types of websites</h2>
+                <ul>
+                    <li>Landing pages</li>
+                    <li>Enquiry / service based</li>
+                    <li>Subscription</li>
+                    <li>E-commerce</li>
+                </ul>
+                <a href="/childs/schedule.html"><button class="call-button" style="background-color: #feb301; color: black;">Book a call</button></a>
+            </div>
+            <div class="image-section">
+                <div class="webpage-mockup" style="background-color: #feb301;">
+                    <img src="/Images/dataviz.jpg" alt="Person holding a mobile device" class="main-image">
+                    <div class="text-section">
+                        <p class="josh">Josué AFOUDA - Data Developer Expert</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="background-color: #fff;">
+            <div class="image-section">
+                <div class="webpage-mockup" style="background-color: #20c056;">
+                    <img src="/Images/app.jpg" alt="Person holding a mobile device" class="main-image">
+                    <div class="text-section">
+                        <p class="josh">Josué AFOUDA - Data Developer Expert</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-section">
+                <h1>App Development</h1>
+                <p>Your website is often the first point of contact for potential customers, the focus is on creating an online presence that is both visually compelling and highly functional.</p>
+                <p>The design process begins with a thorough consultation to understand business goals, target audience and brand identity. This foundational step ensures the website aligns perfectly with the intended vision.</p>
+                <h2 style="color: #20c056;">Types of websites</h2>
+                <ul>
+                    <li>Landing pages</li>
+                    <li>Enquiry / service based</li>
+                    <li>Subscription</li>
+                    <li>E-commerce</li>
+                </ul>
+                <a href="/childs/schedule.html"><button class="call-button" style="background-color: #20c056;">Book a call</button></a>
+            </div>
+        </div>
+
+        <div class="container" style="background-color: #fff;">
+            <div class="text-section">
+                <h1>Web design</h1>
+                <p>Your website is often the first point of contact for potential customers, the focus is on creating an online presence that is both visually compelling and highly functional.</p>
+                <p>The design process begins with a thorough consultation to understand business goals, target audience and brand identity. This foundational step ensures the website aligns perfectly with the intended vision.</p>
+                <h2 style="color: #f7501d;">Types of websites</h2>
+                <ul>
+                    <li>Landing pages</li>
+                    <li>Enquiry / service based</li>
+                    <li>Subscription</li>
+                    <li>E-commerce</li>
+                </ul>
+                <a href="/childs/schedule.html"><button class="call-button" style="color: black; background-color: #f7501d;">Book a call</button></a>
+            </div>
+            <div class="image-section">
+                <div class="webpage-mockup" style="background-color: #f7501d;">
+                    <img src="/Images/webdesign.jpg" alt="Person holding a mobile device" class="main-image">
+                    <div class="text-section">
+                        <p class="josh">Josué AFOUDA - Data Developer Expert</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Fichier du pied de page -->
+    <div id="footer"></div>
+
+    <script>
+        // Charger et insérer le contenu HTML
+        ['header', 'footer'].forEach(id => {
+            fetch(id + '.html')
+                .then(response => response.text())
+                .then(data => document.getElementById(id).innerHTML = data)
+                .catch(error => console.error('Erreur lors du chargement du fichier:', error));
+        });
+    </script>
+</body>
+</html>
