@@ -2,8 +2,6 @@
 
 Bienvenue sur le portfolio de Josué AFOUDA ! Ce site web présente les compétences et projets de Josué AFOUDA en tant qu'Expert Freelance en R/RShiny & Python, spécialisé dans l'automatisation des flux de travail et la création de solutions analytiques évolutives. 
 
-![Aperçu du Portfolio]("D:\Projets\IT\Datascience\afouda_website\Images\port.png")
-
 ## Aperçu
 
 Ce projet de portfolio a été conçu pour montrer mes réalisations et inviter les visiteurs à collaborer avec moi. Le site est divisé en plusieurs sections :
