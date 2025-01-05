@@ -1,0 +1,281 @@
+/* --- RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Global Styles --- */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- About Section --- */
+.about-section {
+    background: linear-gradient(to right, #f7fbfe 0%, #838282 100%);
+    padding: 50px 20px;
+}
+.section-title {
+    text-align: center;
+    font-size: 4em;
+    font-weight: 700;
+    color: #f7501d;
+    margin-bottom: 30px;
+    padding-top: 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding-left: 120px;
+}
+
+.about-img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-right: 80px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+    width: 90%;
+    max-width: 700px;
+    text-align: justify;
+    margin-right: 70px;
+}
+.about-description p{
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justifyx;
+}
+.about-description h3{
+    font-weight: bolder;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about-description .btn {
+    background-color: #f7501d;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+section .btn {
+    background-color: #f7501d;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #f7501d;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.webpage-mockup {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.text-section h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 2.5em;
+    color: #373737;
+}
+
+.text-section .josh {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 1em;
+    color: #000;
+    text-align: center;
+}
+
+.text-section h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+.text-section p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* --- Responsive Design --- */
+
+/* For tablets and smaller devices (portrait and landscape) */
+@media screen and (max-width: 1024px) {
+    .about-inner {
+        flex-direction: column;
+        padding-left: 0;
+        margin: 20px;
+    }
+
+    .about-img {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .about-description {
+        text-align: center;
+        width: 80%;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .text-section h1 {
+        font-size: 2em;
+    }
+
+    .text-section .josh {
+        font-size: 0.9em;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+    .section-title {
+        font-size: 3em;
+        padding-top: 80px;
+    }
+
+    .about-inner {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .about-description {
+        width: 90%;
+        margin-right:20px;
+        margin-left:20px;
+    }
+
+    .about-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .text-section h1 {
+        font-size: 1.8em;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .call-button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    .text-section .josh {
+        font-size: 0.8em;
+    }
+
+    section .btn {
+        font-size: 16px;
+    }
+}
+
+/* For very small devices (phones in portrait mode) */
+@media screen and (max-width: 480px) {
+    .section-title {
+        font-size: 2.5em;
+        padding-top: 60px;
+    }
+
+    .about-description {
+        width: 95%;
+    }
+
+    .about-inner {
+        flex-direction: column;
+    }
+
+    .text-section h1 {
+        font-size: 1.5em;
+    }
+
+    .text-section .josh {
+        font-size: 0.7em;
+    }
+
+    .call-button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
