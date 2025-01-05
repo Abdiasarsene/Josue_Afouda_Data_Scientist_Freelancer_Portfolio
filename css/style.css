@@ -294,7 +294,7 @@ section.two-columns {
     
     /* Section 1: 4 colonnes */
     .tools {
-        color: #f7501d;
+        color: #c75b;
         padding: 20px;
         padding-bottom: 20px;
         padding-top: 10px;
@@ -307,7 +307,8 @@ section.two-columns {
     }
     
     .four-columns .column {
-        flex: 0%; /* Les colonnes prennent 100% de la largeur */
+        flex: 0%;
+        background-color: #e6dfbd; /* Les colonnes prennent 100% de la largeur */
     }
 
     .four-columns img {
