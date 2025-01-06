@@ -182,6 +182,13 @@ section .btn {
         width: 80%;
     }
 
+    .about-description p {
+        text-align: justify;
+        margin-left: -10px;
+        margin-right: -10px;
+
+    }
+
     .container {
         flex-direction: column;
         padding: 10px;
@@ -198,6 +205,13 @@ section .btn {
     section {
         flex-direction: column;
         align-items: center;
+    }
+
+    .text-section p{
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify;
+        font-size: 15px;
+        line-height: 1.5;
     }
 }
 
@@ -221,6 +235,9 @@ section .btn {
 
     .about-description p{
         font-size: 16px;
+        text-align: justify;
+        margin-left: -10px;
+        margin-right: -10px;
     }
 
     .about-img {
@@ -248,8 +265,10 @@ section .btn {
         font-size: 2em;
         text-align: center;
     }
-    .text-section p {
+    .text-section p{
+        font-family: 'Times New Roman', Times, serif;
         text-align: justify;
+        font-size: 15px;
         line-height: 1.5;
     }
     .webpage-mockup{
@@ -267,6 +286,13 @@ section .btn {
 
     .about-description {
         width: 95%;
+    }
+
+    .about-description p{
+        font-size: 15px;
+        text-align: justify;
+        margin-left: -10px;
+        margin-right: -10px;
     }
 
     .about-inner {
@@ -296,6 +322,7 @@ section .btn {
     .text-section p {
         text-align: justify;
         line-height: 1.5;
+        font-size: 15px;
     }
     .webpage-mockup{
         margin-left: 10px;

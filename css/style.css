@@ -106,7 +106,6 @@ section.two-columns {
 
 .four-columns .column {
     flex: 1 1 calc(25%, 20px);
-    background: #f7501d;
     border: 1px solid #000;
     border-radius: 10px;
     padding: 20px;
@@ -294,7 +293,7 @@ section.two-columns {
     
     /* Section 1: 4 colonnes */
     .tools {
-        color: #c75b;
+        color: #f7501d;
         padding: 20px;
         padding-bottom: 20px;
         padding-top: 10px;
@@ -308,7 +307,11 @@ section.two-columns {
     
     .four-columns .column {
         flex: 0%;
-        background-color: #e6dfbd; /* Les colonnes prennent 100% de la largeur */
+        background-color: #e6dfbd;
+        padding: 20px;
+        width: 300px;
+        margin-left: -20px;
+        margin-right: -20px;
     }
 
     .four-columns img {
@@ -462,7 +465,20 @@ section.two-columns {
         padding: 20px;
     }
     .four-columns .column {
-        flex: 1 1 100%; /* Les colonnes prennent également 100% de la largeur sur les petits écrans */
+        flex: 1 1 100%;
+        flex: 0%;
+        background-color: #e6dfbd;
+        padding: 20px;
+        width: 300px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .four-columns img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 15px;
     }
 
     /* Réduction de la taille de la police pour les petits écrans */
