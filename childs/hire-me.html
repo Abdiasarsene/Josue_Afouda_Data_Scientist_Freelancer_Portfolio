@@ -64,7 +64,22 @@
             ['header', 'footer'].forEach(id => {
                 fetch(id + '.html')
                     .then(response => response.text())
-                    .then(data => document.getElementById(id).innerHTML = data)
+                    .then(data => {
+                        document.getElementById(id).innerHTML = data;
+        
+                        // Ajouter le script pour activer les menus une fois le contenu chargé
+                        if (id === 'header') {
+                            // Ajouter l'écouteur d'événement après le chargement du header
+                            const toggler = document.querySelector(".navbar-toggler");
+                            const menu = document.querySelector("#navbarNav");
+        
+                            if (toggler && menu) {
+                                toggler.addEventListener("click", function () {
+                                    menu.classList.toggle("show");
+                                });
+                            }
+                        }
+                    })
                     .catch(error => console.error('Erreur lors du chargement du fichier:', error));
             });
         </script>
