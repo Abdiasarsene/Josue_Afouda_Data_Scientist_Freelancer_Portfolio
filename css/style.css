@@ -218,332 +218,80 @@ section.two-columns {
     margin-top: 20px;
 }
 
-/* Responsivité : Les colonnes se suivent verticalement sur les petits et moyens écrans */
-@media (max-width: 1024px) {
-    section.two-columns {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px;
-        gap: 20px;
-        background-color: #f7fbfe;
-        padding-top: 130px;
-        padding-bottom: 50px;
+/* Réactivité sur tablette et mobile */
+
+/* Tablette */
+@media (max-width: 768px) {
+    .two-columns {
+        flex-direction: column;
+        align-items: center;
     }
-    
-    /* Colonnes de texte */
-    .text-column {
-        flex: 1;
-        overflow: hidden; /* Masquer les débordements */
-        margin-left: 40px;
-        margin-right: 40px;
+
+    .two-columns img {
+        max-width: 90%;
     }
-    
-    /* Titres */
-    .text-column h1 {
-        font-size: 2em;
-        margin-bottom: 10px;
-        color: #333;
-        font-weight: bolder;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    
-    .text-column h2 {
-        font-size: 22px;
+
+    .two-columns div {
         margin-bottom: 20px;
-        color: #f7501d;
-        font-weight: bolder;
-    }
-    
-    .text-column p {
-        font-size: 12px;
-        line-height: 1.6;
-        color: #000;
-        margin-bottom: 20px;
-        font-family: 'Times New Roman', Times, serif;
-    }
-    
-    /* Boutons */
-    .buttons button {
-        padding: 10px 20px;
-        margin-right: 10px;
-        font-size: 1rem;
-        border: none;
-        cursor: pointer;
-        color: #fff;
-        background-color: #20c056;
-        border-radius: 4px;
-        transition: background-color 0.3s ease;
-    }
-    
-    .buttons button:hover {
-        background-color: #0056b3;
-    }
-    
-    /* Image */
-    .image-column {
-        flex: 1;
-        margin-left: -20px;
-        margin-right: 20px;
-    }
-    
-    .image-column img {
-        width: auto;
-        height: 100emx;
-        /* border-radius: 8px; */
-    }
-    
-    /* Section 1: 4 colonnes */
-    .tools {
-        color: #c75b;
-        padding: 20px;
-        padding-bottom: 20px;
-        padding-top: 10px;
-        margin-bottom: -20px;
-        text-align: center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-weight: bolder;
-        font-size: 40px;
-        background-color: #f7fbfe;
-    }
-    
-    .four-columns .column {
-        flex: 0%;
-        background-color: #e6dfbd; /* Les colonnes prennent 100% de la largeur */
     }
 
-    .four-columns img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        margin-bottom: 15px;
-    }
-    
-    .four-columns h3 {
-        font-size: 1rem;
-        margin-bottom: 10px;
-        color: #232124;
-        font-weight: bolder;
-        font-size: 12px;
-    }
-    
-    .four-columns p {
-        font-size: 1rem;
-        color: #000;
-        font-family: 'Times New Roman', Times, serif;
+    h1 {
+        font-size: 30px;
     }
 
-    .text-column, .image-column {
-        margin: 0; /* Réinitialiser les marges pour un alignement vertical propre */
+    h2 {
+        font-size: 24px;
     }
 
-    .image-column img {
-        width: 100%; /* Ajustement de l'image à la largeur du conteneur */
-        height: 100%;
-    }
-
-        /* Section 2: Call-to-action */
-    .call-to-action {
-        text-align: center;
-        padding: 50px;
-        background-color: #feb301;
-        color: white;
+    p {
+        font-size: 14px;
     }
 
     .call-to-action h2 {
-        font-size: 2.5em;
-        margin-bottom: 15px;
-        color: #000;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-weight: bolder;
-
-    }
-
-    .call-to-action p {
-        font-size: 1.2rem;
-        margin-bottom: 20px;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 20px;
-    }
-
-    .call-to-action button {
-        padding: 10px 20px;
-        font-size: 1rem;
-        border: none;
-        border-radius: 5px;
-        color: white;
-        background-color: #20c056;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .call-to-action button:hover {
-        background-color: #003f88;
-    }
-
-    /* Colonne FAQ */
-    .faq-item {
-        margin-left: 10px;
-        margin-right: 10px;
-        text-align: left; /* Alignement du texte à gauche */
+        font-size: 24px;
     }
 
     .faq h2 {
-        font-size: 2.5rem; /* Taille du titre FAQ adaptée */
-        padding-bottom: 30px;
-        text-align: center;
-    }
-
-    .faq-item h3 {
-        font-size: 1.8rem; /* Taille réduite pour le sous-titre */
-        text-align: center;
-    }
-
-    .faq-item p {
-        font-size: 1rem; /* Taille du texte FAQ adaptée */
-        margin-left: 20px;
-        margin-right: 20px;
-        text-align: center;
-    }
-    .is button {
-        margin: 0 auto;
-        display: none;
-        margin-top: 20px;
+        font-size: 24px;
     }
 }
 
-@media (max-width: 596px) {
-    section.two-columns {
-        flex-direction: column; /* Les colonnes sont empilées verticalement */
+/* Mobile */
+@media (max-width: 480px) {
+    .two-columns {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .text-column, .image-column {
-        margin: 0; /* Réinitialiser les marges pour un alignement vertical propre */
+    .two-columns img {
+        max-width: 100%;
     }
 
-    .two-columns .text-column h1 {
-        font-size: 35px; /* Réduction de la taille du titre */
-        font-weight: 800px;
-        text-align: center;
+    .two-columns div {
+        margin-bottom: 20px;
     }
 
-    .two-columns .text-column h2 {
-        font-size: 20px; /* Réduction de la taille du sous-titre */
-        text-align:center ;
+    h1 {
+        font-size: 26px;
     }
 
-    .two-columns .text-column p {
-        font-size: 0.9rem; /* Réduction de la taille du texte */
-        text-align: center;
+    h2 {
+        font-size: 20px;
     }
 
-    .image-column img {
-        width: 100%; /* Ajustement de l'image à la largeur du conteneur */
-        height: auto;
-    }
-    .buttons button {
-        margin: 0 auto;
-        display: none;
-        margin-top: 20px;
-
-    }
-    .is button {
-        padding: 10px 20px;
-        font-size: 1rem;
-        border: none;
-        cursor: pointer;
-        color: #fff;
-        background-color: #20c056;
-        border-radius: 4px;
-        transition: background-color 0.3s ease;
-        display: flex;
-    }
-    .tools{
-        font-size: 30px;
-        padding: 20px;
-    }
-    .four-columns .column {
-        flex: 1 1 100%; /* Les colonnes prennent également 100% de la largeur sur les petits écrans */
+    p {
+        font-size: 12px;
     }
 
-    /* Réduction de la taille de la police pour les petits écrans */
-    .four-columns h3 {
-        font-size: 1rem; /* Taille de police plus petite */
-    }
-
-    .four-columns p {
-        font-size: 0.9rem; /* Taille de police réduite */
-    }
-    .four-columns img {
-        width: 100px;
-        height: auto;
-        border-radius: 4px;
-        margin-bottom: 10px;
-    }
-
-        /* Section 2: Call-to-action */
     .call-to-action {
-        text-align: center;
-        padding: 20px;
-        padding-top: 50px;
-        background-color: #feb301;
-        color: white;
+        padding: 30px 0;
     }
 
     .call-to-action h2 {
-        font-size: 25px;
-        margin-bottom: 15px;
-        color: #000;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-weight: bolder;
-        line-height: 1.5;
+        font-size: 20px;
     }
 
-    .call-to-action p {
-        font-size: 15px;
-        margin-bottom: 20px;
-        font-family: 'Times New Roman', Times, serif;
-    }
-
-    .call-to-action button {
-        padding: 10px 20px;
-        font-size: 1rem;
-        border: none;
-        border-radius: 5px;
-        color: white;
-        background-color: #20c056;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .call-to-action button:hover {
-        background-color: #003f88;
-    }
-    /* Colonne FAQ */
-    .faq-item {
-        margin-left: 10px;
-        margin-right: 10px;
-        text-align: left; /* Alignement du texte à gauche */
-    }
-
-    /* Taille du titre FAQ */
     .faq h2 {
-        font-size: 25px; /* Taille du titre FAQ pour mobile */
-        padding-bottom: 10px;
-    }
-
-    /* Taille réduite des sous-titres */
-    .faq-item h3 {
-        font-size: 18px; /* Réduction de la taille */
-        text-align: center;
-    }
-
-    /* Ajustement du texte */
-    .faq-item p {
-        font-size: 15px; /* Réduction de la taille du texte pour mobile */
-        margin-left: 10px;
-        margin-right: 10px;
-        color: #000;
-        line-height: 1.5;
-        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
     }
 }
