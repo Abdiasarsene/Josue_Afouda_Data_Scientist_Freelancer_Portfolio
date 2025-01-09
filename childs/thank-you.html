@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/thankyou.css">
+    <link rel="stylesheet" href="/joshua_website/css/thankyou.css">
     <title>Thank You</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
         <div>
             <h1>Thank You!</h1>
             <p>Your submission has been received. I will get back to you as soon as possible.</p>
-            <a href="../index.html" class="btn">Go Back to Home</a>
+            <a href="/joshua_website/index.html" class="btn">Go Back to Home</a>
         </div>
     </section>
 
@@ -28,7 +28,22 @@
         ['header', 'footer'].forEach(id => {
             fetch(id + '.html')
                 .then(response => response.text())
-                .then(data => document.getElementById(id).innerHTML = data)
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+    
+                    // Ajouter le script pour activer les menus une fois le contenu chargé
+                    if (id === 'header') {
+                        // Ajouter l'écouteur d'événement après le chargement du header
+                        const toggler = document.querySelector(".navbar-toggler");
+                        const menu = document.querySelector("#navbarNav");
+    
+                        if (toggler && menu) {
+                            toggler.addEventListener("click", function () {
+                                menu.classList.toggle("show");
+                            });
+                        }
+                    }
+                })
                 .catch(error => console.error('Erreur lors du chargement du fichier:', error));
         });
     </script>

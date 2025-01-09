@@ -3,7 +3,6 @@ body {
     font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* Section de base */
@@ -106,7 +105,6 @@ section.two-columns {
 
 .four-columns .column {
     flex: 1 1 calc(25%, 20px);
-    background: #f7501d;
     border: 1px solid #000;
     border-radius: 10px;
     padding: 20px;
@@ -294,7 +292,7 @@ section.two-columns {
     
     /* Section 1: 4 colonnes */
     .tools {
-        color: #c75b;
+        color: #f7501d;
         padding: 20px;
         padding-bottom: 20px;
         padding-top: 10px;
@@ -306,18 +304,23 @@ section.two-columns {
         background-color: #f7fbfe;
     }
     
+    .four-columns {
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 20px; 
+        justify-content: center; 
+    }
     .four-columns .column {
-        flex: 0%;
-        background-color: #e6dfbd; /* Les colonnes prennent 100% de la largeur */
+        flex: 1 1 90%; 
+        margin: 0 auto;
     }
 
     .four-columns img {
-        width: 100%;
-        height: auto;
+        width: auto; 
+        height: 100%;
         border-radius: 10px;
         margin-bottom: 15px;
     }
-    
     .four-columns h3 {
         font-size: 1rem;
         margin-bottom: 10px;
@@ -333,15 +336,13 @@ section.two-columns {
     }
 
     .text-column, .image-column {
-        margin: 0; /* Réinitialiser les marges pour un alignement vertical propre */
+        margin: 0;
     }
 
     .image-column img {
-        width: 100%; /* Ajustement de l'image à la largeur du conteneur */
+        width: 100%; 
         height: 100%;
     }
-
-        /* Section 2: Call-to-action */
     .call-to-action {
         text-align: center;
         padding: 50px;
@@ -408,6 +409,7 @@ section.two-columns {
         margin: 0 auto;
         display: none;
         margin-top: 20px;
+
     }
 }
 
@@ -456,22 +458,36 @@ section.two-columns {
         border-radius: 4px;
         transition: background-color 0.3s ease;
         display: flex;
+        text-decoration: none;
+        font-weight: 800;
     }
     .tools{
         font-size: 30px;
         padding: 20px;
     }
+    .four-columns {
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 20px; 
+        justify-content: center; 
+    }
     .four-columns .column {
-        flex: 1 1 100%; /* Les colonnes prennent également 100% de la largeur sur les petits écrans */
+        flex: 1 1 90%; 
+        margin: 0 auto;
     }
 
-    /* Réduction de la taille de la police pour les petits écrans */
+    .four-columns img {
+        width: auto; 
+        height: 100%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
     .four-columns h3 {
-        font-size: 1rem; /* Taille de police plus petite */
+        font-size: 1rem; 
     }
 
     .four-columns p {
-        font-size: 0.9rem; /* Taille de police réduite */
+        font-size: 0.9rem; 
     }
     .four-columns img {
         width: 100px;

@@ -121,76 +121,6 @@ li {
     background-color: #00994d;
 }
 
-@media (max-width: 1024px) {
-    .service {
-        height: auto;
-        text-align: center;
-    }
-    .service h1 {
-        font-size: 3em;
-        padding-top: 100px;
-    }
-    .service p {
-        margin-left: 10px;
-        font-size: 12px;
-    }
-    .container {
-        flex-direction: row;
-        padding: 10px;
-    }
-    .container .text-section h1 {
-        font-size: 2em;
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .service {
-        height: auto;
-        padding: 20px;
-        text-align: center;
-    }
-    .service h1 {
-        font-size: 2.5em;
-        margin-top: 40px;
-    }
-    .service p {
-        margin: 10px;
-        margin-left: -30px;
-        margin-right: -30px;
-        margin-top: -40px;
-        font-size: 0.9rem;
-    }
-    .container {
-        flex-direction: column;
-        padding: 5px;
-    }
-    .image-section {
-        flex: none;
-        width: 100%;
-    }
-    .text-section {
-        flex: none;
-        width: 100%;
-    }
-    .main-image {
-        width: 100%;
-        height: 35vh;
-    }
-    .text-section h1 {
-        font-size: 2em;
-        text-align: center;
-    }
-    .text-section p {
-        text-align: justify;
-        line-height: 1.5;
-    }
-    .webpage-mockup{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
-
 .services {
     background: linear-gradient(to right, #feb301 0%, #20c056 100%);
     width: 100%;
@@ -228,4 +158,137 @@ li {
 .services button:hover {
     background-color: #0056b3;
     color: wheat;
+}
+
+.serv{
+    display: none;
+}
+@media (max-width: 1024px) {
+    .service {
+        height: auto;
+        text-align: center;
+    }
+    .service h1 {
+        font-size: 3em;
+        padding-top: 100px;
+    }
+    .service p {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    .container {
+        flex-direction: row;
+        padding: 10px;
+    }
+    .container .text-section h1 {
+        font-size: 2em;
+        margin-top: 20px;
+    }
+    .services {
+        background: linear-gradient(to right, #feb301 0%, #20c056 100%);
+        width: 100%;
+        height: 30vh;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .serv{
+        padding : 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .serv button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        color:  #20c056;
+        background-color: #373737;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        font-style: italic;
+        font-weight: bolder;
+    }
+    
+    .serv button:hover {
+        background-color: #0056b3;
+        color: wheat;
+    }
+}
+
+@media (max-width: 768px) {
+    .service {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    .service h1 {
+        font-size: 2.5em;
+        margin-top: 40px;
+    }
+    .service p {
+        margin: 10px;
+        margin-left: -30px;
+        margin-right: -30px;
+        margin-top: -40px;
+        font-size: 0.9rem;
+    }
+    .serv{
+        padding : 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .serv button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        color:  #20c056;
+        background-color: #373737;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        font-style: italic;
+        font-weight: bolder;
+    }
+    
+    .serv button:hover {
+        background-color: #0056b3;
+        color: wheat;
+    }
+    
+    .container {
+        flex-direction: column;
+        padding: 5px;
+    }
+    .image-section {
+        flex: none;
+        width: 100%;
+    }
+    .text-section {
+        flex: none;
+        width: 100%;
+    }
+    .main-image {
+        width: 100%;
+        height: 35vh;
+    }
+    .text-section h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+    .text-section p {
+        text-align: justify;
+        line-height: 1.5;
+    }
+    .webpage-mockup{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <!-- Lien vers le fichier CSS -->
-    <link rel="stylesheet" href="/css/portfolio.css">
+    <link rel="stylesheet" href="/joshua_website/css/portfolio.css">
     <!-- Lien Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -27,7 +27,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card mb-4">
-                            <img src="/Images/kmeansrshiny.png" class="card-img-top" alt="Projet 1">
+                            <img src="/joshua_website/Images/kmeansrshiny.png" class="card-img-top" alt="Projet 1">
                             <div class="card-body">
                                 <h5 class="card-title">Rshiny Multi-Apps</h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum, nisi a tincidunt placerat, arcu risus efficitur ex, ac sagittis libero enim a nunc. Sed convallis, lectus ac blandit mollis, ligula sapien pulvinar nibh, at dapibus justo arcu ut augue.</p>
@@ -45,7 +45,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4">
-                            <img src="/Images/journey_datascientist.jpg" class="card-img-top" alt="Projet 2">
+                            <img src="/joshua_website/Images/journey_datascientist.jpg" class="card-img-top" alt="Projet 2">
                             <div class="card-body">
                                 <h5 class="card-title">Financial Market Trading App</h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum, nisi a tincidunt placerat, arcu risus efficitur ex, ac sagittis libero enim a nunc. Sed convallis, lectus ac blandit mollis, ligula sapien pulvinar nibh, at dapibus justo arcu ut augue.</p>
@@ -63,7 +63,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4">
-                            <img src="/Images/premiumcourses.png" class="card-img-top" alt="Projet 3">
+                            <img src="/joshua_website/Images/premiumcourses.png" class="card-img-top" alt="Projet 3">
                             <div class="card-body">
                                 <h5 class="card-title">K-Means Clustering App</h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum, nisi a tincidunt placerat, arcu risus efficitur ex, ac sagittis libero enim a nunc. Sed convallis, lectus ac blandit mollis, ligula sapien pulvinar nibh, at dapibus justo arcu ut augue.</p>
@@ -81,7 +81,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4">
-                            <img src="/Images/kmeansrshiny.png" class="card-img-top" alt="Projet 1">
+                            <img src="/joshua_website/Images/kmeansrshiny.png" class="card-img-top" alt="Projet 1">
                             <div class="card-body">
                                 <h5 class="card-title">Rshiny Multi-Apps</h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum, nisi a tincidunt placerat, arcu risus efficitur ex, ac sagittis libero enim a nunc. Sed convallis, lectus ac blandit mollis, ligula sapien pulvinar nibh, at dapibus justo arcu ut augue.</p>
@@ -99,7 +99,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4">
-                            <img src="/Images/kmeansrshiny.png" class="card-img-top" alt="Projet 1">
+                            <img src="/joshua_website/Images/kmeansrshiny.png" class="card-img-top" alt="Projet 1">
                             <div class="card-body">
                                 <h5 class="card-title">Rshiny Multi-Apps</h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum, nisi a tincidunt placerat, arcu risus efficitur ex, ac sagittis libero enim a nunc. Sed convallis, lectus ac blandit mollis, ligula sapien pulvinar nibh, at dapibus justo arcu ut augue.</p>
@@ -117,7 +117,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4">
-                            <img src="/Images/kmeansrshiny.png" class="card-img-top" alt="Projet 1">
+                            <img src="/joshua_website/Images/kmeansrshiny.png" class="card-img-top" alt="Projet 1">
                             <div class="card-body">
                                 <h5 class="card-title">Rshiny Multi-Apps</h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum, nisi a tincidunt placerat, arcu risus efficitur ex, ac sagittis libero enim a nunc. Sed convallis, lectus ac blandit mollis, ligula sapien pulvinar nibh, at dapibus justo arcu ut augue.</p>
@@ -150,7 +150,22 @@
         ['header', 'footer'].forEach(id => {
             fetch(id + '.html')
                 .then(response => response.text())
-                .then(data => document.getElementById(id).innerHTML = data)
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+    
+                    // Ajouter le script pour activer les menus une fois le contenu chargé
+                    if (id === 'header') {
+                        // Ajouter l'écouteur d'événement après le chargement du header
+                        const toggler = document.querySelector(".navbar-toggler");
+                        const menu = document.querySelector("#navbarNav");
+    
+                        if (toggler && menu) {
+                            toggler.addEventListener("click", function () {
+                                menu.classList.toggle("show");
+                            });
+                        }
+                    }
+                })
                 .catch(error => console.error('Erreur lors du chargement du fichier:', error));
         });
     </script>
