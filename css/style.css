@@ -409,6 +409,7 @@ section.two-columns {
         margin: 0 auto;
         display: none;
         margin-top: 20px;
+
     }
 }
 
@@ -457,6 +458,8 @@ section.two-columns {
         border-radius: 4px;
         transition: background-color 0.3s ease;
         display: flex;
+        text-decoration: none;
+        font-weight: 800;
     }
     .tools{
         font-size: 30px;

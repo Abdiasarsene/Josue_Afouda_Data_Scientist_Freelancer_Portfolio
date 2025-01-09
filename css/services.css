@@ -160,6 +160,9 @@ li {
     color: wheat;
 }
 
+.serv{
+    display: none;
+}
 @media (max-width: 1024px) {
     .service {
         height: auto;
@@ -185,19 +188,19 @@ li {
         background: linear-gradient(to right, #feb301 0%, #20c056 100%);
         width: 100%;
         height: 30vh;
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
     }
-    .services p{
-        padding: 20px;
-        margin: auto;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 13px;
-        text-align: center;
-        font-weight: bolder;
+
+    .serv{
+        padding : 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .services button {
+    .serv button {
         padding: 10px 20px;
         font-size: 1rem;
         border: none;
@@ -210,7 +213,7 @@ li {
         font-weight: bolder;
     }
     
-    .services button:hover {
+    .serv button:hover {
         background-color: #0056b3;
         color: wheat;
     }
@@ -237,20 +240,12 @@ li {
         background: linear-gradient(to right, #feb301 0%, #20c056 100%);
         width: 100%;
         height: 25vh;
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
     }
     
-    .services p{
-        padding: 20px;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 13px;
-        text-align: center;
-        font-weight: bolder;
-        
-    }
-    .services button {
+    .serv button {
         padding: 10px 20px;
         margin-right: 10px;
         font-size: 1rem;
@@ -264,7 +259,7 @@ li {
         font-weight: bolder;
     }
     
-    .services button:hover {
+    .serv button:hover {
         background-color: #0056b3;
         color: wheat;
     }
