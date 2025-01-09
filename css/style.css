@@ -305,22 +305,23 @@ section.two-columns {
         background-color: #f7fbfe;
     }
     
+    .four-columns {
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 20px; 
+        justify-content: center; 
+    }
     .four-columns .column {
-        flex: 0%;
-        background-color: #e6dfbd;
-        padding: 20px;
-        width: 300px;
-        margin-left: -20px;
-        margin-right: -20px;
+        flex: 1 1 90%; 
+        margin: 0 auto;
     }
 
     .four-columns img {
-        width: 100%;
+        width: 100%; 
         height: auto;
         border-radius: 10px;
         margin-bottom: 15px;
     }
-    
     .four-columns h3 {
         font-size: 1rem;
         margin-bottom: 10px;
@@ -336,15 +337,14 @@ section.two-columns {
     }
 
     .text-column, .image-column {
-        margin: 0; /* Réinitialiser les marges pour un alignement vertical propre */
+        margin: 0;
     }
 
     .image-column img {
-        width: 100%; /* Ajustement de l'image à la largeur du conteneur */
+        width: 100%; 
         height: 100%;
     }
 
-        /* Section 2: Call-to-action */
     .call-to-action {
         text-align: center;
         padding: 50px;
@@ -464,30 +464,29 @@ section.two-columns {
         font-size: 30px;
         padding: 20px;
     }
+    .four-columns {
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 20px; 
+        justify-content: center; 
+    }
     .four-columns .column {
-        flex: 1 1 100%;
-        flex: 0%;
-        background-color: #e6dfbd;
-        padding: 20px;
-        width: 300px;
-        margin-left: -20px;
-        margin-right: -20px;
+        flex: 1 1 90%; 
+        margin: 0 auto;
     }
 
     .four-columns img {
-        width: 100%;
+        width: 100%; 
         height: auto;
         border-radius: 10px;
         margin-bottom: 15px;
     }
-
-    /* Réduction de la taille de la police pour les petits écrans */
     .four-columns h3 {
-        font-size: 1rem; /* Taille de police plus petite */
+        font-size: 1rem; 
     }
 
     .four-columns p {
-        font-size: 0.9rem; /* Taille de police réduite */
+        font-size: 0.9rem; 
     }
     .four-columns img {
         width: 100px;
