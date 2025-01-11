@@ -1,30 +1,30 @@
-# Portfolio de Josué AFOUDA - Data Scientist
+# Portfolio of Josué AFOUDA - Data Scientist
 
-Bienvenue sur le portfolio de Josué AFOUDA ! Ce site web présente les compétences et projets de Josué AFOUDA en tant qu'Expert Freelance en R/RShiny & Python, spécialisé dans l'automatisation des flux de travail et la création de solutions analytiques évolutives.
+Welcome to Josué AFOUDA's portfolio! This website presents Josué AFOUDA's skills and projects as a Freelance Expert in R/RShiny & Python, specialized in workflow automation and the creation of scalable analytical solutions.
 
-## Mon Portfolio
+## My Portfolio
 
-Bienvenue sur mon portfolio ! Ce site web présente mes compétences et projets en tant que Freelance Expert en R/RShiny & Python, spécialisé dans l'automatisation des flux de travail et la création de solutions analytiques évolutives.
+Welcome to my portfolio! This website presents my skills and projects as a Freelance Expert in R/RShiny & Python, specialized in workflow automation and the creation of scalable analytical solutions.
 
-## Aperçu
+## Overview
 
-Ce projet de portfolio a été conçu pour montrer mes réalisations et inviter les visiteurs à collaborer avec moi. Le site est divisé en plusieurs sections :
+This portfolio project was designed to showcase my achievements and invite visitors to collaborate with me. The site is divided into several sections:
 
-- **À propos** : Une brève introduction sur moi et mes compétences.
-- **Projets** : Une présentation de mes projets avec des descriptions et des liens pour plus de détails.
-- **Contact** : Un formulaire pour entrer en contact avec moi.
+- **About**: A brief introduction about me and my skills.
+- **Projects**: A presentation of my projects with descriptions and links for more details.
+- **Contact**: A form to get in touch with me.
 
-## Technologies Utilisées
+## Technologies Used
 
-Ce portfolio a été construit en utilisant les technologies suivantes :
+This portfolio was built using the following technologies:
 
 - HTML5
 - CSS3
 
 ## Installation
 
-Pour visualiser ce projet localement, suivez les étapes ci-dessous :
+To view this project locally, follow the steps below:
 
-1. Clonez ce dépôt sur votre machine locale :
+1. Clone this repository to your local machine:
 
 git clone https://github.com/Abdiasarsene/joshua_website.git
