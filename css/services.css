@@ -1,11 +1,12 @@
 .service {
     background: linear-gradient(to right, #feb301 0%, #20c056 100%);
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: -50px;
 }
 .service h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
