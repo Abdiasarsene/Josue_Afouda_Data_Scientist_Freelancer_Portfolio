@@ -2,6 +2,8 @@
 
 Welcome to Josué AFOUDA's portfolio! This website presents Josué AFOUDA's skills and projects as a Freelance Expert in R/RShiny & Python, specialized in workflow automation and the creation of scalable analytical solutions.
 
+![Joshua](./portfolio_joshua.png)
+
 ## My Portfolio
 
 Welcome to my portfolio! This website presents my skills and projects as a Freelance Expert in R/RShiny & Python, specialized in workflow automation and the creation of scalable analytical solutions.
@@ -20,6 +22,8 @@ This portfolio was built using the following technologies:
 
 - HTML5
 - CSS3
+
+![scrit](./code_screen.png)
 
 ## Installation
 
